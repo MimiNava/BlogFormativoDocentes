@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 – Educación emocional y proyecto de vida</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .header {
+            background:#1f3c4d;
+            color:white;
+            padding:40px 0;
+            text-align:center;
+            border-radius:0 0 15px 15px;
+            margin-bottom:40px;
+        }
+        .section-title {
+            border-left:5px solid #1f3c4d;
+            padding-left:10px;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+        .content-card {
+            border-radius:12px;
+        }
+
+        /* === ACCESIBILIDAD (MISMO QUE MÓDULO 1) === */
+
+        #accessPanel { 
+            position: fixed; 
+            right: 1rem; 
+            bottom: 1rem; 
+            z-index: 2000; 
+        }
+        #accessMenu button { width: 150px; }
+
+        /* Alto contraste */
+        body.high-contrast {
+            background: #000 !important;
+            color: #FFF !important;
+        }
+        body.high-contrast a { color: #00eaff !important; }
+        body.high-contrast .card,
+        body.high-contrast .content-card {
+            background: #111 !important;
+            color: #FFF !important;
+        }
+        body.high-contrast .navbar, 
+        body.high-contrast .header,
+        body.high-contrast footer {
+            background: #000 !important;
+        }
+
+    </style>
+</head>
+
+<body class="bg-light">
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="blog_inclusivo_index.html">Blog Formativo Para Docentes</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+    <h1 class="fw-bold">Módulo 2</h1>
+    <p class="lead mb-0">Educación emocional, autocuidado y proyecto de vida</p>
+</section>
+
+<div class="container">
+
+    <!-- Botones navegación interna -->
+    <div class="text-center mb-4">
+        <a href="#textos" class="btn btn-outline-primary m-2">📘 Ver Contenidos</a>
+        <a href="#talleres" class="btn btn-outline-primary m-2">🧩 Ver Talleres</a>
+        <a href="index.html" class="btn btn-secondary m-2">⬅ Volver al Inicio</a>
+        <a href="modulo3.html" class="btn btn-success m-2">Continuar al Módulo 3 ➜</a>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- ====================================================== -->
+    <!-- SECCIÓN 1: TEXTOS -->
+    <!-- ====================================================== -->
+
+    <section id="textos" class="mb-5">
+
+        <h2 class="section-title">📘 Contenidos formativos</h2>
+        <p class="lead">Material introductorio sobre gestión emocional, autocuidado y proyecto de vida.</p>
+
+        <article class="card p-4 shadow-sm mb-4 content-card">
+            <h4>1. ¿Qué es la educación emocional?</h4>
+            <p>
+                Explicación en lenguaje claro sobre la conciencia emocional, la identificación de sentimientos 
+                y la importancia de reconocer el impacto de las experiencias personales en la vida cotidiana.
+            </p>
+        </article>
+
+        <article class="card p-4 shadow-sm mb-4 content-card">
+            <h4>2. Autocuidado y bienestar integral</h4>
+            <p>
+                Ideas simples para promover el autocuidado físico, emocional y social mediante acciones cotidianas.
+            </p>
+        </article>
+
+        <article class="card p-4 shadow-sm mb-4 content-card">
+            <h4>3. Construcción de proyecto de vida</h4>
+            <p>
+                Reflexión sobre metas personales, intereses, talentos y rutas posibles para el futuro.
+            </p>
+        </article>
+
+    </section>
+
+    <hr class="my-5">
+
+    <!-- ====================================================== -->
+    <!-- SECCIÓN 2: TALLERES -->
+    <!-- ====================================================== -->
+
+    <section id="talleres" class="mb-5">
+
+        <h2 class="section-title">🧩 Talleres y actividades</h2>
+        <p class="lead">Ejercicios prácticos para fortalecer habilidades emocionales y de planificación personal.</p>
+
+        <div class="card p-4 shadow-sm mb-4 content-card">
+            <h4>Taller 1: Reconociendo mis emociones</h4>
+            <p>Actividad para identificar emociones y expresarlas en lenguaje accesible.</p>
+            <audio controls>
+                <source src="audio_emociones.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card p-4 shadow-sm mb-4 content-card">
+            <h4>Taller 2: Mi caja de autocuidado</h4>
+            <p>Ejercicio donde las personas crean una caja simbólica con elementos que les ayudan al bienestar.</p>
+        </div>
+
+        <div class="card p-4 shadow-sm mb-4 content-card">
+            <h4>Taller 3: Mi proyecto de vida</h4>
+            <p>Actividad para planear metas a corto, mediano y largo plazo.</p>
+        </div>
+
+    </section>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="index.html" class="btn btn-secondary">⬅ Volver al Inicio</a>
+        <a href="modulo3.html" class="btn btn-success">Continuar al Módulo 3 ➜</a>
+    </div>
+
+</div>
+
+
+<!-- ====================================================== -->
+<!-- ACCESIBILIDAD FLOTANTE (MISMO QUE MÓDULO 1) -->
+<!-- ====================================================== -->
+
+<div id="accessPanel" class="access-tools">
+  <!-- Botón principal -->
+  <button class="btn btn-primary rounded-circle p-3" id="accessToggle"
+    aria-label="Abrir menú de accesibilidad">
+    ♿
+  </button>
+
+  <!-- Menú -->
+  <div id="accessMenu" class="mt-2 d-none flex-column">
+    <button class="btn btn-sm btn-outline-dark mb-1" id="increaseFont">Aumentar texto</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="decreaseFont">Disminuir texto</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="resetFont">Restablecer texto</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="toggleContrast">Alto contraste</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="readPage">Leer página</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="stopReading">Detener lectura</button>
+  </div>
+</div>
+
+<!-- ====================================================== -->
+<!-- SCRIPTS ACCESIBILIDAD -->
+<!-- ====================================================== -->
+
+<script>
+/* MENÚ FLOTANTE */
+const menu = document.getElementById("accessMenu");
+document.getElementById("accessToggle").onclick = () => {
+  menu.classList.toggle("d-none");
+};
+
+/* FUENTES */
+let fontSize = 16;
+
+document.getElementById("increaseFont").onclick = () => {
+  fontSize += 1;
+  document.body.style.fontSize = fontSize + "px";
+};
+
+document.getElementById("decreaseFont").onclick = () => {
+  if (fontSize > 12) fontSize -= 1;
+  document.body.style.fontSize = fontSize + "px";
+};
+
+document.getElementById("resetFont").onclick = () => {
+  fontSize = 16;
+  document.body.style.fontSize = "16px";
+};
+
+/* CONTRASTE */
+document.getElementById("toggleContrast").onclick = () => {
+  document.body.classList.toggle("high-contrast");
+};
+
+/* LECTOR DE PÁGINA */
+let synth = window.speechSynthesis;
+
+function leer(texto){
+  let speech = new SpeechSynthesisUtterance(texto);
+  speech.lang = "es-CO";
+  synth.speak(speech);
+}
+
+document.getElementById("readPage").onclick = () => {
+  synth.cancel();
+  let seleccionado = window.getSelection().toString().trim();
+  if (seleccionado.length > 3) {
+    leer(seleccionado);
+  } else {
+    leer(document.body.innerText);
+  }
+};
+
+document.getElementById("stopReading").onclick = () => {
+  synth.cancel();
+};
+</script>
+
+</body>
+</html>

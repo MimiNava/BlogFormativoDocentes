@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos Clave</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .header {
+            background:#1f3c4d;
+            color:white;
+            padding:40px 0;
+            text-align:center;
+            border-radius:0 0 15px 15px;
+            margin-bottom:40px;
+        }
+        .section-title {
+            border-left:5px solid #1f3c4d;
+            padding-left:10px;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+        .resource-card {
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s ease;
+        }
+        .resource-card:hover {
+            transform:scale(1.02);
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Blog Formativo Para Docentes</a>
+    </div>
+</nav>
+
+<!-- Header -->
+<section class="header">
+    <h1 class="fw-bold">Documentos Clave</h1>
+    <p class="lead mb-0">Normativas, lineamientos y documentos esenciales para la práctica educativa</p>
+</section>
+
+<div class="container">
+
+    <!-- Botonera superior -->
+    <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary m-2">⬅ Volver al Inicio</a>
+        <a href="modulo1.html" class="btn btn-outline-primary m-2">Módulo 1</a>
+        <a href="modulo2.html" class="btn btn-outline-success m-2">Módulo 2</a>
+        
+    </div>
+
+    <hr class="my-5">
+
+    <h2 class="section-title">📄 Documentos Oficiales</h2>
+    <p class="lead">Accede a los documentos normativos más relevantes para la educación inclusiva.</p>
+
+    <div class="row g-4">
+
+        <!-- Documento Clave 1 -->
+        <div class="col-md-6">
+            <div class="card resource-card p-3 h-100">
+                
+                <!-- Imagen clickeable -->
+                <a href="https://www.minsalud.gov.co/proteccionsocial/promocion-social/Discapacidad/Paginas/certificacion.aspx" 
+                   target="_blank">
+                    <img src="img/certificacion1.png" class="img-fluid rounded mb-3" alt="Documento Clave">
+                </a>
+
+                <p class="small text-muted">
+                    Certificación de discapacidad — Ministerio de Salud y Protección Social.
+                </p>
+
+                <!-- Botón -->
+                <a href="https://www.minsalud.gov.co/proteccionsocial/promocion-social/Discapacidad/Paginas/certificacion.aspx" 
+                   class="btn btn-primary btn-sm" target="_blank">
+                    Abrir documento
+                </a>
+            </div>
+        </div>
+
+    </div> <!-- row -->
+
+    <hr class="my-5">
+
+    <!-- Botonera final -->
+    <div class="text-center mt-5 mb-4">
+        <a href="index.html" class="btn btn-lg btn-secondary m-2">🏠 Volver al Inicio</a>
+        <a href="modulo1.html" class="btn btn-lg btn-outline-primary m-2">📘 Módulo 1</a>
+        <a href="modulo2.html" class="btn btn-lg btn-success m-2">📗 Módulo 2</a>
+       
+    </div>
+
+</div>
+
+</body>
+</html>

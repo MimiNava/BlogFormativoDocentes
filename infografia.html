@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Recursos – Infografías y Rutas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .header {
+            background:#1f3c4d;
+            color:white;
+            padding:40px 0;
+            text-align:center;
+            border-radius:0 0 15px 15px;
+            margin-bottom:40px;
+        }
+        .section-title {
+            border-left:5px solid #1f3c4d;
+            padding-left:10px;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+        .content-card {
+            border-radius:15px;
+            transition: all 0.3s ease;
+        }
+        .content-card:hover {
+            transform: scale(1.02);
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+        }
+        .img-box {
+            width:100%;
+            height:250px;
+            background:#e9ecef;
+            border-radius:12px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#6c757d;
+            font-size:1.2rem;
+            font-style:italic;
+            overflow:hidden;
+        }
+        .img-box img {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Blog Formativo Para Docentes</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+    <h1 class="fw-bold"> Rutas</h1>
+    <p class="lead mb-0">Material visual para orientación rápida, rutas institucionales y flujogramas.</p>
+</section>
+
+<div class="container">
+
+    <!-- Botones -->
+    <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary m-2">⬅ Volver al Inicio</a>
+        <a href="modulo1.html" class="btn btn-primary m-2">Ir al Módulo 1</a>
+        <a href="modulo2.html" class="btn btn-success m-2">Módulo 2 ➜</a>
+    </div>
+
+    <hr class="my-5">
+
+    <h2 class="section-title">📍 Rutas disponibles</h2>
+    <p class="lead">Selecciona una imagen para abrir o descargar el recurso asociado.</p>
+
+    <div class="row g-4 mt-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6">
+            <a href="https://www.unidadvictimas.gov.co/wp-content/uploads/2022/07/cartillarutasdeatencionvf.pdf" target="_blank" style="text-decoration:none; color:inherit;">
+                <div class="card p-3 shadow-sm content-card">
+                    
+                    <!-- AQUI PONES TU IMAGEN -->
+                    <div class="img-box">
+                     <img src="img/ruta1.png"> 
+                        
+                    </div>
+
+                    <div class="p-2">
+                        <h5 class="mt-3">Ruta de Atención, Asistencia y Reparación Integral. </h5>
+                        <p class="text-muted">Click En La Imagen Para Acceder A La Ruta.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6">
+            <a href="https://observatorio.victimasbogota.gov.co/sites/default/files/documentos/Anexo%201.%20Rutas%20de%20Atencio%CC%81n%20por%20Hecho%20Victimizante.pdf" target="_blank" style="text-decoration:none; color:inherit;">
+                <div class="card p-3 shadow-sm content-card">
+
+                    <!-- AQUI PONES TU IMAGEN -->
+                    <div class="img-box">
+                    <<img src="img/ruta2.png"> 
+                    
+                    </div>
+
+                    <div class="p-2">
+                        <h5 class="mt-3">Ruta para la atención a víctimas. Plan de contingencia para la atención y ayuda humanitaria inmediata </h5>
+                        <p class="text-muted">Click En La Imagen Para Acceder A La Ruta.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="index.html" class="btn btn-secondary mx-2">⬅ Volver al Inicio</a>
+        <a href="modulo1.html" class="btn btn-primary mx-2">Ir al Módulo 1</a>
+        <a href="modulo2.html" class="btn btn-success mx-2">Continuar al Módulo 2 ➜</a>
+    </div>
+
+</div>
+
+</body>
+</html>
+

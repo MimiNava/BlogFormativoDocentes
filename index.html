@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Formativo Inclusivo — Maqueta</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- Variables de color accesible --- */
+    :root{
+      --petroleo: #1F3C4D;
+      --menta: #A8D5BA;
+      --amarillo: #F7D77A;
+      --gris-fondo: #F7F8F9;
+      --text-main: #142029;
+      --card-shadow: rgba(31,60,77,0.06);
+    }
+
+    /* --- Reset tipográfico --- */
+    body{
+      font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color: var(--text-main);
+      background: var(--gris-fondo);
+      line-height: 1.6;
+      font-size:16px;
+    }
+    h1,h2,h3{font-family: 'Montserrat', 'Poppins', sans-serif; color: var(--petroleo)}
+
+    /* --- Header --- */
+    .navbar-brand strong{color:var(--menta)}
+    .hero{
+      background: linear-gradient(180deg, rgba(31,60,77,0.9) 0%, rgba(31,60,77,0.8) 100%), url('') center/cover no-repeat;
+      color: white;
+      padding: 4rem 0;
+    }
+
+    /* --- Tarjetas de módulos --- */
+    .module-card{border-radius: .8rem; box-shadow: 0 6px 18px var(--card-shadow); border: none}
+
+    /* --- Accesibilidad flotante simple --- */
+    .access-tools{position: fixed; right: 1rem; bottom: 1rem; z-index: 1050}
+    .access-tools .btn{margin-bottom: .4rem}
+
+    /* --- Footer --- */
+    footer{background: white; border-top: 1px solid #e6e6e6; padding: 2rem 0}
+
+    /* --- Responsive tweaks --- */
+    @media (max-width: 576px){
+      .hero{padding: 3rem 0}
+    }
+
+    /* --- Focus visible for keyboard navigation --- */
+    :focus{outline: 3px solid var(--amarillo); outline-offset: 2px}
+
+    /* --- Microinteracción: check badge --- */
+    .completed-badge{background: var(--menta); color: var(--petroleo); padding: .2rem .5rem; border-radius: .6rem; font-weight:600}
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="mb-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24" class="me-2"><rect width="24" height="24" rx="5" fill="var(--menta)"></rect></svg>
+          <div>
+            <div style="line-height:1"><strong>Blog Formativo<br></strong></div>
+            <small class="text-muted">Capacitación para docentes</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#capacitaciones">Capacitaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#talleres">Talleres</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rutas">Rutas y Emprendimiento</a></li>
+            <li class="nav-item"><a class="nav-link" href="#comunidad">Comunidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero text-center">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Programa de capacitación para docentes</h1>
+        <p class="lead mb-4">Herramientas pedagógicas inclusivas para acompañar a jóvenes con discapacidad víctimas del conflicto armado.</p>
+        <div class="d-flex justify-content-center gap-2">
+          <a href="#capacitaciones" class="btn btn-light btn-lg">Ver módulos</a>
+          <a href="#recursos" class="btn btn-outline-light btn-lg">Biblioteca de recursos</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container my-5">
+
+    <!-- DESCRIPCION DEL PROGRAMA -->
+    <section id="descripcion" class="mb-5">
+      <h2>Descripción del programa</h2>
+      <p class="text-muted">El blog funciona como una plataforma de formación por módulos con contenidos diseñados a partir de la investigación y la sistematización de talleres realizados con jóvenes. Incluye <strong>textos en lenguaje claro</strong>, <strong>videos subtitulados</strong>, <strong>audios</strong>, <strong>infografías</strong> y <strong>plantillas descargables</strong>, garantizando accesibilidad cognitiva, visual y auditiva.</p>
+      <div class="alert alert-info small" role="alert">
+        <strong>Nota:</strong> Todos los materiales y testimonios se publican respetando criterios éticos: consentimiento informado, anonimización cuando sea necesario y enfoque en capacidades y proyectos de vida.
+      </div>
+    </section>
+
+    <!-- CAPACITACIONES / MODULOS -->
+    <section id="capacitaciones" class="mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Módulos de formación</h2>
+        
+      </div>
+
+      <div class="row g-4">
+        <!-- MODULO 1 -->
+        <div class="col-md-6">
+          <div class="card module-card p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Módulo 1: Discapacidad, conflicto y vulnerabilidades cruzadas</h5>
+              <p class="card-text small">Textos breves en lenguaje claro sobre discapacidad, conflicto armado y vulnerabilidades cruzadas. Material complementario: audios descriptivos e infografías sobre tópicos clave.</p>
+              <ul class="small">
+                <li>Textos en lenguaje claro y accesible</li>
+                <li>Infografías descargables</li>
+                <li>Audios con lectura en voz alta</li>
+                <li>Historias narradas por jóvenes o familias (con consentimiento)</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="modulo1.html" class="btn btn-sm btn-primary">Abrir Módulo 1</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODULO 2 -->
+        <div class="col-md-6">
+          <div class="card module-card p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Módulo 2: Empleabilidad y emprendimiento accesible</h5>
+              <p class="card-text small">Recursos prácticos para búsqueda de empleo, creación de emprendimientos y herramientas para la autonomía económica.</p>
+              <ul class="small">
+                <li>Videos cortos subtitulados con técnicas para la búsqueda de empleo accesible</li>
+                <li>Plantillas para hojas de vida según perfiles</li>
+                <li>Guías para identificar habilidades y recursos locales</li>
+                <li>Material descargable para diseñar emprendimientos de bajo costo</li>
+                <li>Historias de experiencias exitosas (con consentimiento)</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="modulo2.html" class="btn btn-sm btn-primary">Abrir Módulo 2</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BANCO DE RECURSOS -->
+    <section id="recursos" class="mb-5">
+      <h2>Banco de recursos accesibles</h2>
+      <p class="text-muted"> Rutas institucionales, material pedagógico para docentes, plantillas de planificación y documentos clave sobre políticas de discapacidad y atención a víctimas.</p>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Rutas Institucionales </h5>
+              <p class="card-text small">Este espacio está pensado para ofrecer orientación accesible sobre los mecanismos oficiales de apoyo para víctimas del conflicto armado. Aquí podrás conocer qué entidades pueden ayudarte, cómo solicitar atención o priorización en servicios, y cuáles son los beneficios disponibles según tu situación. Nuestro propósito es que tengas un punto de referencia claro y confiable para navegar el sistema, con un enfoque de dignidad, inclusión y acompañamiento.</p>
+              <a href="infografia.html" class="stretched-link">Ver / Descargar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Material pedagógico</h5>
+              <p class="card-text small">Plantillas de planificación, guías didácticas y actividades adaptadas.</p>
+              <a href="material_pedagogico.html" class="stretched-link">Explorar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Documentos clave</h5>
+              <p class="card-text small">Políticas, normativas y referencias para el trabajo institucional.</p>
+              <a href="documentos_clave.html" class="stretched-link">Consultar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TALLERES -->
+    <section id="talleres" class="mb-5">
+      <h2>Talleres y actividades</h2>
+      <p class="text-muted">Sesiones prácticas que integran ejercicios asincrónicos (retos digitales) y encuentros presenciales en la Casa de la Cultura y la Memoria.</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5 class="card-title">Talleres programados</h5>
+            <p class="small">Autoconocimiento, habilidades socioemocionales, proyecto de vida y emprendimiento.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Calendario</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5 class="card-title">Encuentros virtuales</h5>
+            <p class="small">Sesiones con emprendedores locales, orientadores y líderes comunitarios.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Unirse</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RUTAS Y EMPRENDIMIENTO -->
+    <section id="rutas" class="mb-5">
+      <h2>Rutas, reinserción y emprendimiento</h2>
+      <p class="text-muted">Orientaciones prácticas y plantillas para acompañar procesos de empleabilidad y emprendimiento de bajo costo.</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">Hoja de vida accesible (plantilla)</li>
+            <li class="list-group-item">Red de aliados locales</li>
+            <li class="list-group-item">Protocolos para acompañamiento laboral</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5 class="card-title">Historias de éxito (con consentimiento)</h5>
+            <p class="card-text small">Relatos que inspiran proyectos productivos y de reinserción.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Ver ejemplos</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- COMUNIDAD Y FAQ -->
+    <section id="comunidad" class="mb-5">
+      <h2>Comunidad de aprendizaje</h2>
+      <p class="text-muted">Espacio para comentarios moderados, preguntas frecuentes y orientación básica para familias y docentes.</p>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card p-3">
+            <h5 class="card-title">Foro y comentarios</h5>
+            <p class="small">Comentarios moderados y foros temáticos para intercambio de prácticas y dudas.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Ir al foro</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5 class="card-title">Preguntas frecuentes</h5>
+            <p class="small">Respuestas cortas y enlaces de orientación para docentes y familias.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Ver FAQ</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ACCESIBILIDAD FLOTANTE -->
+  
+
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Blog Formativo Para Docentes</h5>
+          <p class="small text-muted">Proyecto piloto — Granada, Antioquia. Material de uso educativo y comunitario.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <small class="text-muted">Accesibilidad | Privacidad | Créditos</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Simple accessibility controls
+    const increaseBtn = document.getElementById('increaseFont');
+    const decreaseBtn = document.getElementById('decreaseFont');
+    const contrastBtn = document.getElementById('toggleContrast');
+    let contrastOn = false;
+
+    increaseBtn?.addEventListener('click', ()=>{
+      document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) + 1) + 'px';
+    });
+    decreaseBtn?.addEventListener('click', ()=>{
+      document.body.style.fontSize = Math.max(13, parseFloat(getComputedStyle(document.body).fontSize) - 1) + 'px';
+    });
+
+    contrastBtn?.addEventListener('click', ()=>{
+      contrastOn = !contrastOn;
+      if(contrastOn){
+        document.documentElement.style.setProperty('--petroleo','#000000');
+        document.documentElement.style.setProperty('--menta','#ffffff');
+        document.documentElement.style.setProperty('--amarillo','#ffd24d');
+        document.body.style.background = '#ffffff';
+      } else {
+        document.documentElement.style.setProperty('--petroleo','#1F3C4D');
+        document.documentElement.style.setProperty('--menta','#A8D5BA');
+        document.documentElement.style.setProperty('--amarillo','#F7D77A');
+        document.body.style.background = 'var(--gris-fondo)';
+      }
+    });
+
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Inclusivo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Encabezado */
+        .header {
+            background:#1f3c4d;
+            color:white;
+            padding:60px 0;
+            text-align:center;
+            border-radius:0 0 20px 20px;
+            margin-bottom:40px;
+        }
+
+        .card-custom {
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s ease;
+        }
+        .card-custom:hover {
+            transform:scale(1.02);
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* ACCESIBILIDAD */
+        #accessPanel { 
+            position: fixed; 
+            right: 1rem; 
+            bottom: 1rem; 
+            z-index: 2000; 
+        }
+        #accessMenu button { width: 150px; }
+
+        /* Alto contraste */
+        body.high-contrast {
+            background: #000 !important;
+            color: #FFF !important;
+        }
+        body.high-contrast a { color: #00eaff !important; }
+        body.high-contrast .card,
+        body.high-contrast .card-custom {
+            background: #111 !important;
+            color: #FFF !important;
+        }
+        body.high-contrast .navbar, 
+        body.high-contrast footer {
+            background: #000 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+
+
+
+
+<br><br>
+
+<!-- FOOTER -->
+<footer class="text-center p-3 bg-dark text-white mt-5">
+    © 2025 - Blog Formativo Para Docentes · Universidad de Antioquia
+</footer>
+
+<!-- ACCESIBILIDAD FLOTANTE -->
+<div id="accessPanel" class="access-tools">
+  <!-- Botón principal -->
+  <button class="btn btn-primary rounded-circle p-3" id="accessToggle"
+    aria-label="Abrir menú de accesibilidad">
+    ♿
+  </button>
+
+  <!-- Menú -->
+  <div id="accessMenu" class="mt-2 d-none flex-column">
+    <button class="btn btn-sm btn-outline-dark mb-1" id="increaseFont">Aumentar texto</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="decreaseFont">Disminuir texto</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="resetFont">Restablecer texto</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="toggleContrast">Alto contraste</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="readPage">Leer página</button>
+    <button class="btn btn-sm btn-outline-dark mb-1" id="stopReading">Detener lectura</button>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+/* --- MENÚ FLOTANTE --- */
+const menu = document.getElementById("accessMenu");
+document.getElementById("accessToggle").onclick = () => {
+  menu.classList.toggle("d-none");
+};
+
+/* --- CONTROL DE FUENTES --- */
+let fontSize = 16;
+
+document.getElementById("increaseFont").onclick = () => {
+  fontSize += 1;
+  document.body.style.fontSize = fontSize + "px";
+};
+
+document.getElementById("decreaseFont").onclick = () => {
+  if (fontSize > 12) fontSize -= 1;
+  document.body.style.fontSize = fontSize + "px";
+};
+
+document.getElementById("resetFont").onclick = () => {
+  fontSize = 16;
+  document.body.style.fontSize = "16px";
+};
+
+/* --- CONTRASTE ALTO --- */
+document.getElementById("toggleContrast").onclick = () => {
+  document.body.classList.toggle("high-contrast");
+};
+
+/* --- LECTOR DE PÁGINA (TTS) --- */
+let synth = window.speechSynthesis;
+
+function leer(texto){
+  let speech = new SpeechSynthesisUtterance(texto);
+  speech.lang = "es-CO";
+  synth.speak(speech);
+}
+
+document.getElementById("readPage").onclick = () => {
+  synth.cancel();
+
+  let seleccionado = window.getSelection().toString().trim();
+  if (seleccionado.length > 3) {
+    leer(seleccionado);
+  } else {
+    leer(document.body.innerText);
+  }
+};
+
+document.getElementById("stopReading").onclick = () => {
+  synth.cancel();
+};
+</script>
+
+</body>
+</html>
